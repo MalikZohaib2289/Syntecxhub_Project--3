@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark / Light Mode Toggle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="topbar">
+        <div class="brand">
+          <div class="brand-icon">◐</div>
+          <div>
+            <h1>Theme Switcher</h1>
+            <p>Choose your preferred appearance</p>
+          </div>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <span class="icon sun" aria-hidden="true">☀</span>
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+          <span class="icon moon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+
+      <div class="hero">
+        <div class="hero-badge" id="themeBadge">LIGHT MODE</div>
+        <h2 id="heroTitle">A bright, clean workspace.</h2>
+        <p id="heroText">
+          Toggle the switch to change the theme. Your preference is automatically saved in your browser.
+        </p>
+      </div>
+
+      <div class="features">
+        <article class="feature">
+          <span class="feature-icon">⚡</span>
+          <div>
+            <h3>Instant change</h3>
+            <p>Colors update dynamically with JavaScript.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon">💾</span>
+          <div>
+            <h3>Preference saved</h3>
+            <p>Your theme remains the same after refresh.</p>
+          </div>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon">✨</span>
+          <div>
+            <h3>Smooth transition</h3>
+            <p>Theme colors fade smoothly for a polished feel.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="status" id="statusText">Current theme: Light</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
